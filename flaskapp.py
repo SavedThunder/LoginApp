@@ -11,7 +11,7 @@ myConnection = mysql.connector.connect(host='localhost', user='ubuntu', password
 myConnection.autocommit = True
 app = Flask(__name__, static_folder="static", template_folder="templates")
 app.config['TESTING'] = True
-app.config['SECRET_KEY'] = b'\x0c\xce\x93\xed\x11_\xa4\x97|\xd7~h\n\xd2\x82:'
+app.config['SECRET_KEY'] #####
 app.static_folder = 'static'
 compress = FlaskStaticCompress(app)
 
